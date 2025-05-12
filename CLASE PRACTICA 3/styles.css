@@ -1,0 +1,160 @@
+/* Estilos básicos */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    background-image: url('https://www.example.com/fondo-general.jpg'); /* Cambia esta ruta si no tienes imagen */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+/* Título */
+header.titulo {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+header.titulo h1 {
+    font-size: 3em;
+    color: #ff7f50;
+    font-weight: bold;
+    margin: 0;
+}
+
+header.titulo p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Ícono de inicio */
+.inicio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.home-icon {
+    width: 30px; /* Tamaño reducido para el ícono */
+    height: 30px; /* Tamaño reducido para el ícono */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.home-icon:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Diseño de los productos */
+.productos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.producto {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 20px;
+    width: 280px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    color: #fff;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.producto-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff7f50;
+}
+
+.producto-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.producto-info h2 {
+    font-size: 1.5em;
+    color: #ff7f50;
+    margin: 10px 0;
+}
+
+.producto-info p {
+    font-size: 1.1em;
+}
+
+.agregar-carrito {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.agregar-carrito:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Estilo del carrito (flotante) */
+.carrito {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.carrito h2 {
+    color: #ff7f50;
+}
+
+#carrito-lista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#carrito-lista li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
